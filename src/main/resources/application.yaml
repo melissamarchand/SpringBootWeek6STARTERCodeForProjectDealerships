@@ -1,0 +1,10 @@
+spring:
+    datasource:
+        password: 
+        username: 
+        url: jdbc:mysql://3306/jeep
+
+logging:
+    level:
+        root: warn
+        '[com.prominiotech]': debug
