@@ -17,7 +17,7 @@ public class TransactionDao {
 
             try (
                     Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dealership?useSSL=false",
-                            "root", "Dolphins");
+                            "", "");
 
                     // create a statement using connection object
                         PreparedStatement preparedStatement = connection.prepareStatement(getTransaction);
@@ -55,7 +55,7 @@ public class TransactionDao {
     
             try (
                     Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dealership?useSSL=false",
-                            "root", "Dolphins");
+                            "", "");
     
                     // create a car statement using connection object
                     PreparedStatement preparedStatement = connection.prepareStatement(updateTransaction)) {
@@ -85,7 +85,7 @@ public class TransactionDao {
     
             try (
                     Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dealership?useSSL=false",
-                            "root", "Dolphins");
+                            "", "");
     
                     // create a car statement using connection object
                     PreparedStatement preparedStatement = connection.prepareStatement(updateTransaction)) {
@@ -112,7 +112,7 @@ public class TransactionDao {
 
             try (
                     Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/dealership?useSSL=false",
-                            "root", "Dolphins");
+                            "", "");
 
                     // create a statement using connection object
                         PreparedStatement preparedStatement = connection.prepareStatement(getTransaction);
